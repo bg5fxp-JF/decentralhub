@@ -6,12 +6,12 @@ import Image from "next/image";
 export default function Hero() {
 	return (
 		<section className="relative flex flex-col items-center  w-full max-w-[1440px] h-screen gap-8  mx-auto  px-6  bg-bg1 sm:px-16 ">
-			<Image
+			{/* <Image
 				src="/images/bg.webp"
 				className="absolute object-cover opacity-15 w-full h-full -z-10"
 				width={200}
 				height={100}
-			/>
+			/> */}
 			<Image
 				className="relative -z-20"
 				src="/images/Logo.jpg"
@@ -20,7 +20,8 @@ export default function Hero() {
 			/>
 			<div className="flex flex-col gap-3 items-center text-center">
 				<h1 className="text-4xl md:text-6xl font-bold -mt-10 sm:mt-0">
-					Coming Soon
+					<span className=" text-[#01286B] ">Coming</span>{" "}
+					<span className=" text-[#FDD605] ">Soon</span>
 				</h1>
 				<p className=" w-full md:w-[75%] font-light text-slate-500">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. At quam
@@ -29,12 +30,12 @@ export default function Hero() {
 					deserunt.
 				</p>
 			</div>
-			<Countdown />
-			<div className="flex flex-col gap-3 items-center text-center">
+			{/* <Countdown /> */}
+			<div className="flex flex-col gap-3 items-center text-center mt-10">
 				<p className=" w-full font-light text-slate-500">
 					Notify Me When It's Ready
 				</p>
-				<div className="flex items-center bg-black bg-opacity-10 ">
+				<div className="flex items-center bg-black bg-opacity-10  ">
 					<input
 						className=" bg-transparent p-2 focus-visible:outline-none"
 						type="text"
