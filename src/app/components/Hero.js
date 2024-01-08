@@ -2,6 +2,7 @@ import Link from "next/link";
 import Countdown from "./Countdown";
 import { FaInstagram, FaTelegramPlane, FaTiktok } from "react-icons/fa";
 import Image from "next/image";
+import JoinWaitlist from "./JoinWaitlist";
 
 export default function Hero() {
 	return (
@@ -35,14 +36,7 @@ export default function Hero() {
 				<p className=" w-full font-light text-slate-500">
 					Notify Me When It's Ready
 				</p>
-				<div className="flex items-center bg-black bg-opacity-10  ">
-					<input
-						className=" bg-transparent p-2 focus-visible:outline-none"
-						type="text"
-						placeholder="Your Email"
-					/>
-					<button className="p-2 bg-[#01286B] text-white ">Submit</button>
-				</div>
+				<JoinWaitlist />
 				<div className="flex gap-x-3 mt-2">
 					<Link href="https://t.me/DeCentra1Hub">
 						<FaTelegramPlane fill="#01286B" />
